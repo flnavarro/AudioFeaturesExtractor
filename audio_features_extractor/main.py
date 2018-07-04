@@ -33,13 +33,13 @@ class InputParser(object):
         self.parser.add_argument('-input_filename', action='store', dest='input_filename', required=True,
                                  help='Input csv filename (including extension).')
         self.parser.add_argument('-input_delimiter', action='store', dest='input_delimiter', required=True,
-                                 help="Input delimiter: 'comma' or 'semicolon'.")
+                                 help="Csv delimiter for input file: specify 'comma' or 'semicolon'.")
         self.parser.add_argument('-output_filename', action='store', dest='output_filename', required=True,
                                  help='Output csv filename (including extension).')
         self.parser.add_argument('-spotify_client_id', action='store', dest='spotify_client_id', required=True,
-                                 help='Spotify Client ID.')
+                                 help='Specify your Spotify Client ID.')
         self.parser.add_argument('-spotify_client_secret', action='store', dest='spotify_client_secret', required=True,
-                                 help='Spotify Client Secret.')
+                                 help='Specify your Spotify Client Secret.')
 
     def parse_input(self):
         self.add_arguments()
