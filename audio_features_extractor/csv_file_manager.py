@@ -59,6 +59,7 @@ class CsvFileManager(object):
                     'energy': track['energy'],
                     'instrumentalness': track['instrumentalness'],
                     'mode': track['mode'],
+                    'tempo': track['tempo'],
                     'valence': track['valence'],
                     'duration_ms': track['duration_ms'],
                     'preview_url': track['preview_url'],
